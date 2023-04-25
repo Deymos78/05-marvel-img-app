@@ -14,32 +14,26 @@ export const MarvelCharactersGrid = () => {
 
   return (
     <>
-        <h2>Categoria</h2>
         {
             isLoading && (<h2>Cargando...</h2>)
         }
 
-        <div>Aqui Apareceran los personajes de Marvel</div>
-        <div className="card-grid">
-            Soy una tarjeta vacia
-        </div>
-        <div className="card-grid">
-            {
-                
-            }
-            { 
-    
-                title.map( (character) => (
-                    // console.log(character),
-                    <MarvelCharacterItem
-                        key={character.id}
-                        {...character}
-                    />
-                ))
-            }
-        </div>
+        <div className="card-grid">                
 
-        
+                    { 
+            
+                        title.map( (character) => (
+                            // console.log(character),
+                            <MarvelCharacterItem
+                                key={character.id}
+                                {...character}
+                            />
+                        ))
+                    }
+                
+                
+            ¡
+        </div>
     </>
   )
 }

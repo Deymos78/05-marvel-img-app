@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { MarvelCharactersGrid } from "./components/MarvelCharactersGrid";
+import { SearchMarvelCharacter } from "./components/SearchMarvelCharacter";
 
 
 
@@ -14,9 +15,10 @@ export const MarvelApiApp = () => {
         {/* Titulo */}
 
         {/* Input */}
-        <h1>MarvelApiApp</h1>
-        <div>MarvelApiApp</div> 
+        <h1>MarvelApiApp</h1> 
 
+      <SearchMarvelCharacter/>
+      
         {/* Listado de Personajes de Marvel */}
         {/* Creamos otro componente funcional o funtional component para traer una lista de personajes de marvel con una peticion fetch 
             a una API publica y gratuita */}

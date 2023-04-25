@@ -4,9 +4,11 @@
 // EN ESTA FUNCION ASINCRONA REALIZAREMOS LA PETICION HACIA LA API DE MARVEL 
 export const getCharacters = async() => {
 
+    const apikey = '38d90848f70dbf7641a741a055318a5d';
+    const hash = '5ba0110e6c23a4ae92f98927cdf69171';
     // Aqui montaremos la url que hara la peticion a la API de Marvel
     // const url = 'https://gateway.marvel.com/v1/public/comics?ts=1&apikey=38d90848f70dbf7641a741a055318a5d&hash=5ba0110e6c23a4ae92f98927cdf69171';
-    const url = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=38d90848f70dbf7641a741a055318a5d&hash=5ba0110e6c23a4ae92f98927cdf69171';
+    const url = `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=${ apikey }&hash=${ hash }&name=hulk`;
 
     // Realizaremos la peticion
     // La funcion fetch es asincrona, asi que pones un await para esperar a que se complete la tarea
